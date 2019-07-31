@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable name="user" type="com.example.coroutinesandmvvm.model.User"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+                android:id="@+id/ivUserImage"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="4:3" app:layout_constraintVertical_bias="0.0"/>
+
+        <TextView
+                android:id="@+id/tvUserNameTag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                app:layout_constraintEnd_toStartOf="@+id/tvUserName"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/ivUserImage"
+                android:layout_marginEnd="16dp" android:layout_marginTop="8dp"/>
+
+
+        <TextView
+                android:id="@+id/tvUserName"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:text="Johny Depp"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/ivUserImage"
+                android:layout_marginEnd="8dp" android:layout_marginTop="8dp"/>
+
+
+        <TextView
+                android:id="@+id/tvUserAgeTag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Namesdafasfafafafafadfadfafdafafdfafdadfafdafafafdfafafafafaf"
+                app:layout_constraintEnd_toStartOf="@+id/tvUserName"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/tvUserNameTag"
+                android:layout_marginEnd="16dp" android:layout_marginTop="8dp"/>
+
+
+        <TextView
+                android:id="@+id/tvUserAge"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:text="Johny Depp"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/tvUserNameTag"
+                android:layout_marginEnd="8dp" android:layout_marginTop="8dp"/>
+
+
+        <TextView
+                android:id="@+id/tvUserGenderTag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Namesdafasfafafafafadfadfafdafafdfafdadfafdafafafdfafafafafaf"
+                app:layout_constraintEnd_toStartOf="@+id/tvUserName"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/tvUserAgeTag"
+                android:layout_marginEnd="16dp" android:layout_marginTop="8dp"/>
+
+
+        <TextView
+                android:id="@+id/tvUserGender"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:text="Johny Depp"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/tvUserAgeTag"
+                android:layout_marginEnd="8dp" android:layout_marginTop="8dp"/>
+
+
+        <TextView
+                android:id="@+id/tvUserTagLineTag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/tvUserTagLine"
+                app:layout_constraintTop_toBottomOf="@+id/tvUserGenderTag"
+                android:layout_marginEnd="16dp" android:layout_marginTop="8dp"/>
+
+
+        <TextView
+                android:id="@+id/tvUserTagLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:text="Johny Depp"
+                app:layout_constraintStart_toEndOf="@+id/tvUserTagLineTag"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/tvUserGenderTag"
+                android:layout_marginEnd="8dp" android:layout_marginTop="8dp"/>
+
+
+        <Button
+                android:id="@+id/btnGrowOld"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Grow Old"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>
